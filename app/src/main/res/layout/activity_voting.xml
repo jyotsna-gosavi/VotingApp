@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VotingActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/voteTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vote for your favorite candidate:"
+            android:textSize="24sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp" />
+
+        <RadioGroup
+            android:id="@+id/candidateRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/voteTitleTextView"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/candidate1RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate 1" />
+
+            <RadioButton
+                android:id="@+id/candidate2RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate 2"
+                android:layout_below="@id/candidate1RadioButton" />
+
+            <RadioButton
+                android:id="@+id/candidate3RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate 3"
+                android:layout_below="@id/candidate2RadioButton" />
+
+            <RadioButton
+                android:id="@+id/candidate4RadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate 4"
+                android:layout_below="@id/candidate3RadioButton" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/voteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vote"
+            android:layout_below="@id/candidateRadioGroup"
+            android:layout_marginTop="24dp" />
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_below="@id/voteButton"
+            android:layout_marginTop="24dp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
